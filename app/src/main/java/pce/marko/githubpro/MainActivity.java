@@ -4,11 +4,13 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends ActionBarActivity {
 
     TextView txt;
+    Button btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,6 +18,7 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
 
         txt = (TextView)findViewById(R.id.textView);
+        btn = (Button)findViewById(R.id.button);
     }
 
     @Override
